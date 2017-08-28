@@ -37,10 +37,10 @@ sub onItemSelected()
     
     videoContent = {
     
-        streamFormat: "hls",
-        titleSeason: "Art21 Season 3",
-        title: "Place",
-        url:  "http://ga.video.cdn.pbs.org/videos/art-21/fe42d468-e90f-489b-ade3-a242f196dba2/60600/hd-mezzanine-16x9/ARTF101_iPad-1240k.m3u8",
+        streamFormat: "",
+        titleSeason: "",
+        title: "",
+        url:  "",
 
         'used for raf.setContentGenre(). For ads provided by the Roku ad service, see docs on 'Roku Genre Tags'
         categories: ["Documentary"]
