@@ -27,15 +27,9 @@ sub playContentWithAds()
     content = video.content
     RAF.setAdUrl(content.ad_url)
     ' for generic measurements api
+    RAF.enableAdMeasurements(true)
     RAF.setContentGenre(content.categories)  'if unset, ContentNode has it as []
-    ' Nielsen DAR specific measurements
-    if content.nielsen_app_id <> invalid:
-        RAF.enableNielsenDAR(true)
-        RAF.setNielsenAppId(content.nielsen_app_id)
-        RAF.setNielsenGenre(content.nielsen_genre) 
-        RAF.setNielsenProgramId(content.nielsen_program_id)
-        RAF.setContentLength(content.length)
-    end if
+    RAF.setContentLength(content.length)
 
     ' log tracking events
 '     logObj = {
@@ -131,4 +125,3 @@ sub playContentWithAds()
 
     print "PlayerTask: exiting playContentWithAds()"
 end sub
-
