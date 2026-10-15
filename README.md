@@ -1,3 +1,11 @@
+# RAF4RSG-sample has moved to GitLab
+
+**This project has moved.** Development now continues at **https://gitlab.com/rokudev/RAF4RSG-sample**.
+
+This GitHub repository is archived and read-only. It is kept only as a pointer to the new home. Please open new issues and merge requests on GitLab.
+
+---
+
 # RAF4RSG Sample
 
 This sample code demonstrates the use of Roku Advertising Framework in a Roku SceneGraph app. With v2 of RAF, the preferred way of use is by invoking the library from a Task node and passing a 3rd argument (`view`) to .ShowAds, which specifies where exactly in scene graph the ad content (video and interactive ad UI) should be attached.
